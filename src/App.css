@@ -1,0 +1,8 @@
+.wrapper {
+    background-color: var(--main-background-color);
+}
+
+.content{
+  padding-top: var(--header-height);
+  padding-bottom: var(--header-height);
+}

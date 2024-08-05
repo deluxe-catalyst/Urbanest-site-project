@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face{
+  font-family: 'Helvetica';
+  src: url(../src/assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-dm: 'DM Sans', sans-serif;
+  --font-helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --border-color: #88857E;
+  --main-border: 1px solid #88857E;
+  --main-background-color: #F3F1EB;
+  --main-wrapper-width: 86%;
+  --max-wrapper-width: 1400px;
+  --advanced-width: 1600px;
+
+  --header-height: 76px;
+
+  --font-size-xs: max(12px, min(1.5vw, 16px));
+  --font-size-s: max(14px, min(4vw, 18px));
+  --font-size-m: max(24px, min(4vw, 36px));
+  --font-size-l: max(32px, min(7vw, 48px));
+  --font-size-xl: max(44px, min(8vw, 68px));
+
+  --font-color-grey: #717171;
+
+    --button-color: #532926;
+    --button-hover-color: #745452;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--main-background-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}

@@ -1,0 +1,54 @@
+.btn, .hollow, .hollow-light, .arrow-btn{
+    text-transform: uppercase;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px;
+    border-radius: 20px;
+    border: none;
+    font-size: var(--font-size-s);
+    cursor: pointer;
+    transition: .2s;
+    height: min-content;
+    width: 100%;
+}
+
+.btn, .arrow-btn{
+    color: var(--main-background-color);
+    background-color: var(--button-color);
+}
+
+.arrow-btn:hover, .btn:hover{
+    background-color: var(--button-hover-color)
+}
+
+.arrow-btn:hover .inner-btn-arrow{
+    transform: translateX(10px) scale(110%) rotate(-45deg);
+}
+
+.inner-btn-arrow{
+    transition: .2s;
+}
+
+.slide-btn{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transition: .2s;
+}
+
+.slide-btn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border: 2px solid black;
+}

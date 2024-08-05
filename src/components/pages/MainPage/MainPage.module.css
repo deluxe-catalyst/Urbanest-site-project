@@ -1,0 +1,16 @@
+.container{
+    max-width: var(--advanced-width);
+    margin: 0 auto;
+}
+
+.container__wrapper{
+    width: var(--main-wrapper-width);
+    max-width: var(--max-wrapper-width);
+    margin: 0 auto;
+}
+
+@media (max-width: 676px){
+    .container__wrapper{
+        width: 100%;
+    }
+}
