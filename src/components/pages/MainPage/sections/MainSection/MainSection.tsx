@@ -19,8 +19,8 @@ export default function MainSection() {
         <div className={classes['container']}>
             <div className={classes['container__wrapper']}>
                 <div ref={refs.titleBoxRef} className={classes['title-box']}>
-                    <h2 data-lag='0.08' className={classes['main-title']}>Designer furniture for comfort</h2>
-                    <div className={classes.btn} data-lag='0.12'>
+                    <h2 className={classes['main-title']}>Designer furniture for comfort</h2>
+                    <div className={classes.btn}>
                         <Button theme='arrow-btn'>Shop now</Button>
                     </div>
                 </div>

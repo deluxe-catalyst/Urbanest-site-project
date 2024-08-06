@@ -54,6 +54,7 @@
     }
     .container{
         padding-top: 64px;
+        padding-bottom: 64px;;
         width: var(--main-wrapper-width);
         margin: 0 auto;
     }

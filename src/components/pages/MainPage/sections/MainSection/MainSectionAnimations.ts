@@ -8,7 +8,7 @@ export const useMainSectionRefs = () => {
     }
 }
 
-export const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLElement | null>}) =>
+export const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLElement | null>})=>
     [
         {
           element: refs.mainLogoRef.current,
