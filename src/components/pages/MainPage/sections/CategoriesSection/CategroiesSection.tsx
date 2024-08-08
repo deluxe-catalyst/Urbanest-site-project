@@ -27,13 +27,16 @@ export default function CategoriesSection() {
                 <MainTitle>/categories</MainTitle>
                 <div className={classes['categories-menu']}>
                     {categoriesList.map(category =>
-                        <div key={category.id} className={classes['menu__wrapper']}>
+                        <div data-lag='0' key={category.id} className={classes['menu__wrapper']}>
                             <NavLink to={'catalog/' + category.name} className={classes['categories-menu__item']}>
                                 {category.name}
                                 <p className={classes['item__count']}>
                                     ({category.count})
                                 </p>
                             </NavLink>
+                            <p className={classes['item__meter']}>
+                                /0{category.id}
+                            </p>
                         </div>
                     )}
                 </div>

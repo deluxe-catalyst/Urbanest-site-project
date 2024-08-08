@@ -38,7 +38,7 @@ export const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLE
         {
             element: refs.mainImgRef.current,
             config: {
-                y: '-10%',
+              y: '-10%',
               scrollTrigger: {
                 trigger: refs.mainImgRef.current,
                 start: '180px',
@@ -50,13 +50,23 @@ export const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLE
         {
           element: refs.titleBoxRef.current,
           config: {
-            scale: 0.8,
-            y: '60px',
-            gap: '10px',
+            y: '54px',
             scrollTrigger: {
               trigger: refs.titleBoxRef.current,
-              start: '-160px',
+              start: '-116px',
               end: 'bottom top',
+              scrub: true,
+            },
+          },
+        },
+        {
+          element: refs.titleBoxRef.current,
+          config: {
+            gap: '4px',
+            scrollTrigger: {
+              trigger: refs.titleBoxRef.current,
+              start: '-116pxpx',
+              end: '18px',
               scrub: true,
             },
           },

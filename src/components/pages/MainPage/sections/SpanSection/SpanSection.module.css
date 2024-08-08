@@ -19,10 +19,6 @@
     color: var(--main-background-color);
 }
 
-/* .textbox__plug{
-    width: 20px;
-} */
-
 .textbox{
     width: 100%;
     display: flex;
@@ -34,7 +30,7 @@
     color: var(--font-color-gray);
     width: 420px;
     font-size: var(--font-size-xs);
-    margin-right: max(120px, min(14.5vw, 246px));
+    margin-right: max(100px, min(14vw, 230px));
 }
 
 @media (max-width: 991px){
@@ -50,11 +46,11 @@
 @media(max-width: 676px){
 
     .textbox__description{
-        width: 60vw;
+        width: 58vw;
     }
     .container{
         padding-top: 64px;
-        padding-bottom: 64px;;
+        padding-bottom: 40px;;
         width: var(--main-wrapper-width);
         margin: 0 auto;
     }

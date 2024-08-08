@@ -2,6 +2,7 @@ const animationsConfig = (element : HTMLElement) => [
     {   
         element: element,
         config: {
+            borderBottom: 'var(--main-border)',
             y: '0',
             opacity: 1,
             scrollTrigger: {
@@ -24,8 +25,8 @@ const animationsConfig = (element : HTMLElement) => [
                 scrub: true
             }
         }
+    },
 
-    }
 ]
 
 export default animationsConfig;

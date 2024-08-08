@@ -1,4 +1,5 @@
 import classes from './MainPage.module.css'
+import ArrivalSection from './sections/ArrivalSection/ArrivalSection'
 import CategoriesSection from './sections/CategoriesSection/CategroiesSection'
 import MainSection from './sections/MainSection/MainSection'
 import SpanSection from './sections/SpanSection/SpanSection'
@@ -10,6 +11,7 @@ export default function MainPage() {
                 <MainSection/>
                 <SpanSection/>
                 <CategoriesSection/>
+                <ArrivalSection/>
             </div>
         </div>
     )
