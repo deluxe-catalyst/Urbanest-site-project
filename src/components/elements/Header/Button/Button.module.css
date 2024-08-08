@@ -52,3 +52,8 @@
     cursor: pointer;
     border: 2px solid black;
 }
+
+.slide-btn:active{
+    background-color: rgba(0, 0, 0, 0.1);
+
+}

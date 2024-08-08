@@ -13,7 +13,7 @@ export default function SpanSection() {
             scrollTrigger: {
                 trigger: textRef.current,
                 start: "top 90%",
-                end: "bottom 60%",
+                end: "bottom 50%",
                 scrub: true,
             },
             scale: 0.7,

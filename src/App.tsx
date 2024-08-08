@@ -14,7 +14,7 @@ function App() {
     ScrollSmoother.create({
       wrapper: '.wrapper',
       content: '.content',
-      smooth: 1,
+      smooth: 0.8,
       effects: true,
       ignoreMobileResize: true,
       normalizeScroll: true,
