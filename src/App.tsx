@@ -1,9 +1,8 @@
-import { useEffect, useLayoutEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/elements/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
-import sliderClasses from './components/pages/MainPage/sections/ArrivalSection/ArrivalSection.module.css'
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 
