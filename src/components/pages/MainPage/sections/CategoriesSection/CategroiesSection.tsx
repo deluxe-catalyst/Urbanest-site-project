@@ -24,7 +24,9 @@ export default function CategoriesSection() {
     return (
         <div className={classes['container']}>
             <div className={classes['container__wrapper']}>
-                <MainTitle>/categories</MainTitle>
+                <div className={classes['main-title']}>
+                    <MainTitle>/categories</MainTitle>
+                </div>
                 <div className={classes['categories-menu']}>
                     {categoriesList.map(category =>
                         <div data-lag='0' key={category.id} className={classes['menu__wrapper']}>

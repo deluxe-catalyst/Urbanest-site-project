@@ -26,6 +26,9 @@
 
   --border-color: #88857E;
   --main-border: 1px solid #88857E;
+  --main-border-: 1px solid #88857e74;
+  --gray-card-color: #E4E4E4;
+
   --main-background-color: #F3F1EB;
   --main-wrapper-width: 82%;
   --max-wrapper-width: 1400px;
@@ -33,10 +36,10 @@
 
   --header-height: 76px;
 
-  --font-size-xs: max(12px, min(1.5vw, 16px));
-  --font-size-s: max(16px, min(2.5vw, 18px));
-  --font-size-m: max(22px, min(2.5vw, 36px));
-  --font-size-ls: max(28px, min(2.5vw, 34px));
+  --font-size-xs: max(8px, min(2.7vw, 16px));
+  --font-size-s: max(14px, min(1.5vw, 18px));
+  --font-size-m: max(18px, min(2vw, 32px));
+  --font-size-ls: max(28px, min(2.5vw, 36px));
   --font-size-l: max(32px, min(6vw, 48px));
   --font-size-xl: max(44px, min(8vw, 64px));
 

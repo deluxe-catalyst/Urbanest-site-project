@@ -2,7 +2,10 @@
 .categories-menu{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+
 
 .menu__wrapper{
     display: flex;
@@ -13,7 +16,7 @@
     cursor: pointer;
     transform: translateY(100%) scale(0.6);
     opacity: 0.5;
-    position: relative;
+
     background-color: var(--main-background-color);
 }
 

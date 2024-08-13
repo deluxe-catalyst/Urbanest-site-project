@@ -13,9 +13,11 @@
 }
 
 .text-1{
-    font-size: var(--font-size-ls);
+    font-size: var(--font-size-s);
     margin-bottom: 130px;
-    max-width: 600px;
+    max-width: 620px;
+    font-style: italic;
+    font-weight: 700;
 }
 
 .text-2__title{
@@ -50,11 +52,89 @@
     margin-top: 116px;
     width: max(200px, min(80vw, 680px));
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: fit-content;
+    margin-bottom: max(150px, min(20vw, 210px));
+}
+
+.img-box__container{
+    width: 82%;
 }
 
 .img{
-    display: block;
     width: 100%;
+    transform: translateY(120px) scale(1);
+}
+
+.sub-img{
+    position: absolute;
+    left: -16px;
+    bottom: -20%;
+    width: 42%;
+    max-width: 250px;
+    border: max(14px, min(1.5vw, 24px)) solid var(--main-background-color);
+    transform: translateY(60px);
+}
+
+
+.slider-box{
+    display: flex;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.slider::-webkit-scrollbar{
+    height: 0px;
+}
+
+.slider__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: max(20px, min(3.5vw, 40px));
+    box-sizing: border-box;
+}
+
+.slider__link-img{
+    padding-right: max(20px, min(3.5vw, 40px));
+    cursor: pointer;
+    transition: .1s;
+}
+
+.slider__link-img:hover{
+    transform: translateX(4px);
+}
+
+.slider__item{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+.slider__counter{
+    color: black;
+    font-size: var(--font-size-m);
+    margin-bottom: 16px;
+}
+
+
+.slider__img{
+    border: 1px solid rgba(113, 113, 113, 0.5);
+    display: block;
+    height: max(160px, min(45vw, 300px));
+}
+
+.item__info{
+    padding-top: 16px;
+    color: black;
+    font-size: var(--font-size-s);
 }
 
 @media (max-width: 1400px) {
@@ -86,11 +166,20 @@
         margin: 0;
     }
     .info-block__img-box{
-        margin: 0;
+        margin-top: 0;
     }
 }
 
 @media (max-width: 676px) {
+    .slider{
+        overflow-x: scroll;
+    }
+
+    .slider__content{
+        margin-left: calc((100% - var(--main-wrapper-width)) / 2);
+        width: 200%;
+    }
+
     .container{
         margin-top: 64px;
 

@@ -1,14 +1,6 @@
-import { MutableRefObject, useRef } from "react"
+import { MutableRefObject } from "react"
 
-export const useMainSectionRefs = () => {
-    return{
-        mainImgRef: useRef(null),
-        mainLogoRef: useRef(null),
-        titleBoxRef: useRef(null),
-    }
-}
-
-export const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLElement | null>})=>
+const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLElement | null>})=>
     [
         {
           element: refs.mainLogoRef.current,
@@ -72,3 +64,6 @@ export const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLE
           },
         },
       ]
+
+
+      export default animationsConfig;
