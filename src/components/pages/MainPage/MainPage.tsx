@@ -1,7 +1,9 @@
 import classes from './MainPage.module.css'
 import ArrivalSection from './sections/ArrivalSection/ArrivalSection'
+import BestsellersSection from './sections/BestsellersSection/BestsellersSection'
 import CategoriesSection from './sections/CategoriesSection/CategroiesSection'
 import MainSection from './sections/MainSection/MainSection'
+import ServisesSection from './sections/ServisesSection/ServisesSection'
 import SpanSection from './sections/SpanSection/SpanSection'
 
 export default function MainPage() {
@@ -12,6 +14,8 @@ export default function MainPage() {
                 <SpanSection/>
                 <CategoriesSection/>
                 <ArrivalSection/>
+                <ServisesSection/>
+                <BestsellersSection/>
             </div>
         </div>
     )

@@ -5,11 +5,16 @@ import NextButton from '../../../../../assets/images/svg/next-btn.svg';
 import MainLogoSVG from '@/assets/images/svg/urbanest-main-logo.svg';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import useGsapTo from '../../../../../hooks/useGsapTo';
-import { useMainSectionRefs, animationsConfig } from './MainSectionAnimations';
+import animationsConfig from './MainSectionAnimations';
 import sliderList from './SliderList';
 
 export default function MainSection() {
-    const refs = useMainSectionRefs();
+    const refs = {
+        mainImgRef: useRef(null),
+        mainLogoRef: useRef(null),
+        titleBoxRef: useRef(null),
+    };
+
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useLayoutEffect(() => {
