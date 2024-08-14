@@ -57,3 +57,18 @@
     background-color: rgba(0, 0, 0, 0.1);
 
 }
+
+.link{
+    color: black;
+    font-size: var(--font-size-s);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: .1s;
+}
+
+.link:hover{
+    color: black;
+    gap: 8px;
+}

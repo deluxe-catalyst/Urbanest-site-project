@@ -1,0 +1,14 @@
+.main-box__info{
+    color: black;
+}
+
+.img-mask{
+    background-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-image: url('../../../../../assets/images/svg/BoMask.svg');
+}
+
+.main-box__img{
+    width: max(200px, min(40vw, 500px));
+}

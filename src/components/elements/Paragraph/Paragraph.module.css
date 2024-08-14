@@ -1,0 +1,10 @@
+.paragraph{
+    font-size: var(--font-size-xs);
+    color: var(--font-color-gray);
+    margin-bottom: 32px;
+}
+
+.paragraph--italy{
+    font-style: italic;
+    font-size: var(--font-size-s);
+}

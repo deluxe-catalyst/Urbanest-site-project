@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import MainTitle from "../../../../elements/MainTitle/MainTitle";
 import classes from "./ArrivalSection.module.css"
 import ArrowImg from '../../../../../assets/images/svg/next-btn.svg'
@@ -11,22 +10,11 @@ import animationsConfig from "./ArrivalSectionAnimations";
 import imageSlider1 from '../../../../../assets/images/png/arrival-sale-item01.png'
 import imageSlider2 from '../../../../../assets/images/png/arrival-sale-item02.png'
 import imageSlider3 from '../../../../../assets/images/png/arrival-sale-item03.png'
-
-
-const ViewMoreLink = () => {
-    return (
-        <NavLink to='/catalog/armchairs/jerell-designer-chair' className={classes['link']}>
-            View More
-            <img src={ArrowImg} className={classes['link__img']} />
-        </NavLink>
-    )
-}
+import { LinkButton } from "../../../../elements/Header/Button/Button";
+import Paragraph, { ParagraphItalic } from "../../../../elements/Paragraph/Paragraph";
+import ParagraphTitle from "../../../../elements/ParagraphTitle/ParagraphTitle";
 
 const ProductsSlider = () => {
-
-    useLayoutEffect(() => {
-
-    }, [])
 
     const SliderData = [
         {
@@ -48,8 +36,6 @@ const ProductsSlider = () => {
             price: '998$',
         }
     ]
-
-
 
     return (
         <div className={classes['slider-box']}>
@@ -97,20 +83,25 @@ export default function ArrivalSection() {
                 <div className={classes['info-block']}>
                     <div className={classes['info-block__text']}>
                         <div className={classes['text-1']}>
-                            We are pleased to present you our latest novelties, which are sure to attract your attention.
-                            This season we offer a wide selection of furniture that combines modern design and high quality.
+                            <ParagraphItalic>
+                                We are pleased to present you our latest novelties, which are sure to attract your attention.
+                                This season we offer a wide selection of furniture that combines modern design and high quality.
+                            </ParagraphItalic>
+
                         </div>
                         <div className={classes['text-2']}>
-                            <div className={classes['text-2__title']}>
+                            <ParagraphTitle>
                                 Jerell designer chair
-                            </div>
+                            </ParagraphTitle>
                             <div className={classes['text-2__description']}>
-                                JERELL is a comfortable upholstered armchair with a wooden frame and pleasant linen upholstery.
-                                The product has a conceptual design, high-quality workmanship made of modern materials in trendy colors.
+                                <Paragraph>
+                                    JERELL is a comfortable upholstered armchair with a wooden frame and pleasant linen upholstery.
+                                    The product has a conceptual design, high-quality workmanship made of modern materials in trendy colors.
+                                </Paragraph>
                             </div>
                         </div>
                         <div ref={refs.linkRef} className={classes['link-box']}>
-                            <ViewMoreLink />
+                            <LinkButton link={'/catalog/armchairs/jerell-designer-chair'}>View More</LinkButton>
                         </div>
                     </div>
                     <div className={classes['info-block__img-box']}>
