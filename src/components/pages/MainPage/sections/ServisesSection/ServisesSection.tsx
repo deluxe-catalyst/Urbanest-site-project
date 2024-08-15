@@ -4,8 +4,6 @@ import classes from "./ServisesSection.module.css";
 import servisesList from "./ServisesList";
 
 export default function ServisesSection() {
-    console.log(servisesList);
-    
 
     return (
         <div className={classes['container']}>

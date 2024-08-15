@@ -1,6 +1,5 @@
 .container{
     padding-top: 160px;
-    padding-bottom: 136px;
     z-index: 1000;
     background-color: var(--main-background-color);
     color: black;
@@ -27,10 +26,12 @@
 }
 
 .textbox__description{
-    color: var(--font-color-gray);
-    width: 420px;
-    font-size: var(--font-size-xs);
-    margin-right: max(100px, min(14vw, 230px));
+    width: 425px;
+    margin-right: calc(90px + max(20px, min(1.5vw, 40px)) + min(5vw, 100px));
+}
+
+.mobile-br{
+    display: none;
 }
 
 @media (max-width: 991px){
@@ -45,6 +46,12 @@
 
 @media(max-width: 676px){
 
+    .mobile-br{
+        display: block;
+    }
+    .desktop-span{
+        display: none;
+    }
     .textbox__description{
         width: 58vw;
     }

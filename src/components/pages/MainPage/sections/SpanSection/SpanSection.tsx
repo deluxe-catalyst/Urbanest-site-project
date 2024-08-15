@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from 'react'
 import classes from './SpanSection.module.css'
+import Paragraph from '../../../../elements/Paragraph/Paragraph';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -35,12 +36,13 @@ export default function SpanSection() {
                     each <span className={classes['roman-font']}>piece</span> of designer furniture is unique and <span className={classes['roman-font']}>inimitable</span>
                 </div>
                 <div className={classes['textbox']}>
-                        {/* <div className={classes["textbox__plug"]}></div> */}
                         <div className={classes["textbox__description"]}>
-                            We offer a wide range of furniture in various styles and directions so that each client can choose the perfect solution for their home.
-                            <br />
-                            <br />
-                            Here you will find exclusive models of armchairs, sofas, tables, chairs and other pieces of furniture that are distinguished by high quality materials and workmanship. All our products are made from environmentally friendly materials, which makes them safe for health and the environment.
+                            <Paragraph>
+                                We offer a wide range of furniture in various styles and directions so that each client can choose the perfect solution for their home.
+                                <br />
+                                <br />
+                                Here you will find exclusive models of armchairs, sofas, tables, chairs and other pieces of furniture that are distinguished by high quality materials and workmanship. All our products are made from environmentally friendly materials, which makes them safe for health and the environment.
+                            </Paragraph>
                         </div>
                 </div>
             </div>

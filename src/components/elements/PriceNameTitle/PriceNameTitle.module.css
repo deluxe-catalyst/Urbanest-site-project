@@ -1,0 +1,9 @@
+.container{
+    padding-top: 16px;
+    color: black;
+    font-size: var(--font-size-s);
+}
+
+.container__price{
+    font-size: calc(var(--font-size-s) + 2px);
+}
