@@ -6,7 +6,8 @@
     justify-content: center;
     padding-block: 16px;
     border-bottom: var(--main-border);
-    margin-bottom: 30px;
+    margin-top: max(64px, min(14vw, 120px));
+    margin-bottom: max(32px, min(4vw, 60px));
     font-size: var(--font-size-l);
 }
 

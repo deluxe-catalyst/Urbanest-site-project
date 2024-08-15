@@ -6,7 +6,6 @@
   font-style: normal;
 }
 
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -36,38 +35,25 @@
 
   --header-height: 76px;
 
-  --font-size-xs: max(8px, min(2.7vw, 16px));
+  --font-size-xs: max(10px, min(2.7vw, 16px));
   --font-size-s: max(14px, min(1.5vw, 18px));
-  --font-size-m: max(18px, min(5vw, 32px));
-  --font-size-ls: max(26px, min(2vw, 36px));
-  --font-size-l: max(32px, min(6vw, 48px));
+  --font-size-m: max(18px, min(2.8vw, 32px));
+  --font-size-ls: max(26px, min(4vw, 36px));
+  --font-size-l: max(30px, min(4.5vw, 48px));
   --font-size-xl: max(44px, min(8vw, 64px));
 
   --font-color-gray: #717171;
 
-    --button-color: #532926;
-    --button-hover-color: #745452;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --button-color: #532926;
+  --button-hover-color: #745452;
+  
+  --footer-color: #532926;
 }
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--main-background-color);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}

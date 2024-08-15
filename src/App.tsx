@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/elements/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
+import Footer from './components/elements/Footer/Footer';
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+
       <BrowserRouter>
         <Header />
         <div className='wrapper'>
@@ -28,6 +30,7 @@ function App() {
             <Routes>
               <Route path="/" element={<MainPage />} />
             </Routes>
+            <Footer />
           </div>
         </div>
       </BrowserRouter>

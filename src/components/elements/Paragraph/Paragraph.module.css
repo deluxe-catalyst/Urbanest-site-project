@@ -5,6 +5,9 @@
 }
 
 .paragraph--italy{
+    color: black;
     font-style: italic;
     font-size: var(--font-size-s);
+    font-family: var(--font-helvetic);
+    font-weight: 700;
 }

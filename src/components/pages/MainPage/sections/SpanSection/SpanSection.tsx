@@ -36,7 +36,6 @@ export default function SpanSection() {
                     each <span className={classes['roman-font']}>piece</span> of designer furniture is unique and <span className={classes['roman-font']}>inimitable</span>
                 </div>
                 <div className={classes['textbox']}>
-                        {/* <div className={classes["textbox__plug"]}></div> */}
                         <div className={classes["textbox__description"]}>
                             <Paragraph>
                                 We offer a wide range of furniture in various styles and directions so that each client can choose the perfect solution for their home.

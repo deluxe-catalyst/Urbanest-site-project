@@ -66,9 +66,32 @@
     align-items: center;
     gap: 4px;
     transition: .1s;
+    text-decoration: none;
+}
+
+.link__img{
+    width: max(20px, min(2vw, 34px));
 }
 
 .link:hover{
     color: black;
     gap: 8px;
+}
+
+.border-btn{
+    border: 1px solid var(--main-background-color);
+    background-color: transparent;
+    text-transform: uppercase;
+    color: var(--main-background-color);
+    font-size: var(--font-size-s);
+    border-radius: 20px;
+    height: 54px;
+    width: 200px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.border-btn:hover{
+    background-color: var(--main-background-color);
+    color: var(--button-color)
 }

@@ -9,6 +9,7 @@
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     border-bottom: 1px solid var(--border-color);
     gap: 10px;
 }
@@ -114,12 +115,13 @@
     width: fit-content;
 }
 
+/*  здесь багается отступ снизу \/  */
+
 @media (max-width: 991px){
     .container__wrapper{
         flex-direction: column-reverse;
         gap: 48px
     }
-
     .slider-content{
         flex-direction: row-reverse;
         justify-content: space-between;

@@ -7,35 +7,15 @@ import { useLayoutEffect, useRef } from "react";
 import useGsapTo from "../../../../../hooks/useGsapTo";
 import animationsConfig from "./ArrivalSectionAnimations";
 
-import imageSlider1 from '../../../../../assets/images/png/arrival-sale-item01.png'
-import imageSlider2 from '../../../../../assets/images/png/arrival-sale-item02.png'
-import imageSlider3 from '../../../../../assets/images/png/arrival-sale-item03.png'
+
 import { LinkButton } from "../../../../elements/Header/Button/Button";
 import Paragraph, { ParagraphItalic } from "../../../../elements/Paragraph/Paragraph";
 import ParagraphTitle from "../../../../elements/ParagraphTitle/ParagraphTitle";
+import SliderData from "./ArrivalSliderList";
+import { PriceNameTitle } from "../../../../elements/PriceNameTitle/PriceNameTitle";
 
 const ProductsSlider = () => {
 
-    const SliderData = [
-        {
-            id: 1,
-            img: imageSlider1,
-            title: 'Lussole Loft & Mid-Century Sofa',
-            price: '1224$',
-        },
-        {
-            id: 2,
-            img: imageSlider2,
-            title: 'VEIRO chair',
-            price: '1024$',
-        },
-        {
-            id: 3,
-            img: imageSlider3,
-            title: 'EGG chair',
-            price: '998$',
-        }
-    ]
 
     return (
         <div className={classes['slider-box']}>
@@ -46,19 +26,10 @@ const ProductsSlider = () => {
                             <div className={classes['slider__counter']}>/0{sliderItem.id}</div>
 
                             <img className={classes['slider__img']} src={sliderItem.img} />
-
-                            <div className={classes['item__info']}>
-                                <div className={classes['item__title']}>
-                                    {sliderItem.title}
-                                </div>
-                                <div className={classes['item__price']}>
-                                    {sliderItem.price}
-                                </div>
-                            </div>
+                            <PriceNameTitle title={sliderItem.title} price={sliderItem.price}/>
                         </div>
                     )}
-            <img src={ArrowImg} className={classes['slider__link-img']} />
-
+                    <img src={ArrowImg} className={classes['slider__link-img']} />
                 </div>
             </div>
         </div>
