@@ -11,21 +11,17 @@ export default function AboutUsSection() {
                 <h1 className={classes['title']}>
                     Our <span className={classes['stroke-font']}>company </span>
                     
-                    specializes in the <br className={classes['desktop-span']}/> sale <br className={classes['mobile-white-space']}/>
+                    specializes in the <br className={classes['desktop-span-1']}/> sale <br className={classes['mobile-white-space']}/>
 
                     <span className={classes['mobile-white-space']}><br/><br/><br/></span>
                     of
                     <span className={classes['stroke-font']}> high-</span>
 
-                    <span className={classes['desktop-span']}>
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    </span>
+                    <span className={classes['desktop-span-2']}></span>
 
                     quality <br className={classes['desktop-span']}/> furniture
 
-                    <span className={classes['desktop-span']}>
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
-                    </span>
+                    <span className={classes['desktop-span-3']}></span>
 
                     from the world's leading
                     <span className={classes['stroke-font']}> manufacturers</span>

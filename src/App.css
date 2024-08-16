@@ -1,5 +1,6 @@
 .wrapper {
     background-color: var(--main-background-color);
+    height: 100%;
 }
 
 .content{
