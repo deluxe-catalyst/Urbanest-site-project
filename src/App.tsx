@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/elements/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
 import Footer from './components/elements/Footer/Footer';
+import { normalize } from 'path';
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 

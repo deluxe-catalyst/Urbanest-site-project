@@ -83,7 +83,9 @@ export default function Footer() {
     return (
         <footer className={classes['container']}>
             <div className={classes['title-block']}>
-                <img src={UrbanestLogo} alt='Urbanest Logo' />
+                <div className={classes['title-block__wrapper']}>
+                    <img src={UrbanestLogo} alt='Urbanest Logo' />
+                </div>
             </div>
             <div className={classes['container__wrapper']}>
 

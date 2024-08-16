@@ -42,7 +42,7 @@ const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLElement 
         {
           element: refs.titleBoxRef.current,
           config: {
-            y: '54px',
+            y: '80px',
             scrollTrigger: {
               trigger: refs.titleBoxRef.current,
               start: '-116px',
@@ -54,10 +54,10 @@ const animationsConfig  = (refs : {[key: string] : MutableRefObject<HTMLElement 
         {
           element: refs.titleBoxRef.current,
           config: {
-            gap: '4px',
+            gap: '6px',
             scrollTrigger: {
               trigger: refs.titleBoxRef.current,
-              start: '-116pxpx',
+              start: '-116px',
               end: '18px',
               scrub: true,
             },

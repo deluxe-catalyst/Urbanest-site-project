@@ -3,7 +3,7 @@ import classes from './MainSection.module.css';
 import PrevButton from '../../../../../assets/images/svg/prev-btn.svg';
 import NextButton from '../../../../../assets/images/svg/next-btn.svg';
 import MainLogoSVG from '@/assets/images/svg/urbanest-main-logo.svg';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import useGsapTo from '../../../../../hooks/useGsapTo';
 import animationsConfig from './MainSectionAnimations';
 import sliderList from './SliderList';

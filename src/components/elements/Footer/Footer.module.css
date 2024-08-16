@@ -171,13 +171,16 @@
     }
     
 
-    .footer__payments{
-        height: max(20px, min(6vw, 28px));
+    .footer__payments--mobile{
+        height: max(18px, min(6.5vw, 28px));
     }
 
     .title-block{
-        padding: 24px;
         width: 100%;
+    }
+    .title-block__wrapper{
+        width: var(--main-wrapper-width);
+        margin: 0 auto;
     }
 }
 
